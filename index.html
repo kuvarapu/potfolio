@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuvarapu Kiran | AI/ML Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Kuvarapu Kiran - Entry-level AI/ML Engineer specializing in LLMs, RAG, FastAPI, and Cloud architectures.">
+  <meta name="keywords" content="AI/ML Engineer, Generative AI, RAG, LLM, Python, LangChain, FastAPI, Kuvarapu Kiran, Portfolio">
+  <meta name="author" content="Kuvarapu Kiran">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kuvarapu Kiran | AI/ML Engineer Portfolio">
+  <meta property="og:description" content="Portfolio of Kuvarapu Kiran - AI/ML Engineer specializing in LLM pipelines, RAG architectures, and full-stack systems.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Kuvarapu Kiran | AI/ML Engineer & Developer">
+  <meta property="twitter:description" content="AI/ML Engineer specializing in LLM pipelines, RAG, and full-stack systems.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Backdrop Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Floating Glass Background Shapes -->
+  <div class="glass-shape glass-shape-1"></div>
+  <div class="glass-shape glass-shape-2"></div>
+  <div class="glass-shape glass-shape-3"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">&lt;</span>K Kiran<span class="logo-accent"> /&gt;</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="hero-content">
+      <div class="badge-container">
+        <span class="hero-badge"><span class="pulse-dot"></span>Available for Opportunities</span>
+      </div>
+      <h1 class="hero-title">KUVARAPU KIRAN</h1>
+      <h2 class="hero-subtitle">I build <span class="typing-text" id="typing-text"></span></h2>
+      <p class="hero-description">
+        Entry-level AI/ML Engineer with hands-on experience building real-time AI applications, LLM-powered pipelines, and full-stack systems. Specialized in RAG architectures and performance optimization.
+      </p>
+      
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/KuvarapuKiran" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/KuvarapuKiran" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:kuvvarapukiran45@gmail.com" class="social-icon-btn" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Email</span>
+        </a>
+        <a href="tel:+917386472766" class="social-icon-btn" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Call</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- About Section -->
+    <section id="about" class="section section-about fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text-card">
+          <p>
+            I am a highly motivated, entry-level <strong>AI/ML Engineer</strong> with specialized training in Artificial Intelligence and Machine Learning. I have a passion for architecting and deploying LLM pipelines, real-time AI streaming agents, and scalable APIs that solve practical, data-driven problems.
+          </p>
+          <p>
+            My experience spans building conversational RAG pipelines, fine-tuning transformer models, and developing robust backends using FastAPI and WebSockets. I thrive at the intersection of model optimization and software engineering, always focusing on reducing latency and designing production-ready systems.
+          </p>
+          <div class="info-chips">
+            <div class="info-chip">
+              <span class="chip-label">Location</span>
+              <span class="chip-val">Phirangipuram, AP, India</span>
+            </div>
+            <div class="info-chip">
+              <span class="chip-label">Education</span>
+              <span class="chip-val">B.Tech - AI & ML</span>
+            </div>
+            <div class="info-chip">
+              <span class="chip-label">Graduation</span>
+              <span class="chip-val">April 2026</span>
+            </div>
+            <div class="info-chip">
+              <span class="chip-label">English Fluency</span>
+              <span class="chip-val">EF SET C2 (Proficient)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <h3>Generative AI & RAG</h3>
+            <p>Designing sophisticated semantic retrieval, contextual memory pipelines, and orchestrating agents using LangChain.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3>Fast API & Real-time Web</h3>
+            <p>Creating highly responsive backends with async python patterns, WebSockets, and structured API architectures.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>DevOps & Cloud</h3>
+            <p>Deploying solutions securely with containerization (Docker), CI/CD pipelines, and AWS cloud tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-skills fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-filter-container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="ai">AI / ML & GenAI</button>
+          <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="devops">Cloud & DevOps</button>
+          <button class="filter-btn" data-filter="concepts">Concepts & Tools</button>
+        </div>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- AI / ML Category -->
+        <div class="skill-tag" data-category="ai">Machine Learning</div>
+        <div class="skill-tag" data-category="ai">NLP</div>
+        <div class="skill-tag" data-category="ai">LLMs</div>
+        <div class="skill-tag" data-category="ai">Generative AI</div>
+        <div class="skill-tag" data-category="ai">Transformers</div>
+        <div class="skill-tag" data-category="ai">LangChain</div>
+        <div class="skill-tag" data-category="ai">Prompt Engineering</div>
+        <div class="skill-tag" data-category="ai">RAG</div>
+        <div class="skill-tag" data-category="ai">Fine-Tuning</div>
+        <div class="skill-tag" data-category="ai">TensorFlow</div>
+        <div class="skill-tag" data-category="ai">PyTorch</div>
+        <div class="skill-tag" data-category="ai">Scikit-learn</div>
+        <div class="skill-tag" data-category="ai">Hugging Face</div>
+        <div class="skill-tag" data-category="ai">Pandas</div>
+        <div class="skill-tag" data-category="ai">NumPy</div>
+
+        <!-- Backend Category -->
+        <div class="skill-tag" data-category="backend">FastAPI</div>
+        <div class="skill-tag" data-category="backend">REST APIs</div>
+        <div class="skill-tag" data-category="backend">WebSockets</div>
+        <div class="skill-tag" data-category="backend">Node.js</div>
+        <div class="skill-tag" data-category="backend">Scalable Web Apps</div>
+
+        <!-- Languages Category -->
+        <div class="skill-tag" data-category="languages">Python</div>
+        <div class="skill-tag" data-category="languages">Java</div>
+        <div class="skill-tag" data-category="languages">JavaScript</div>
+        <div class="skill-tag" data-category="languages">SQL</div>
+
+        <!-- DevOps Category -->
+        <div class="skill-tag" data-category="devops">AWS (Cloud Essentials)</div>
+        <div class="skill-tag" data-category="devops">Docker</div>
+        <div class="skill-tag" data-category="devops">Git</div>
+        <div class="skill-tag" data-category="devops">GitHub</div>
+        <div class="skill-tag" data-category="devops">CI/CD</div>
+
+        <!-- Concepts & Tools Category -->
+        <div class="skill-tag" data-category="concepts">OOP</div>
+        <div class="skill-tag" data-category="concepts">Data Structures</div>
+        <div class="skill-tag" data-category="concepts">System Design</div>
+        <div class="skill-tag" data-category="concepts">Vector Databases</div>
+        <div class="skill-tag" data-category="concepts">EDA</div>
+        <div class="skill-tag" data-category="concepts">Predictive Modeling</div>
+        <div class="skill-tag" data-category="concepts">Agile</div>
+        <div class="skill-tag" data-category="concepts">OpenAI API</div>
+        <div class="skill-tag" data-category="concepts">ElevenLabs API</div>
+        <div class="skill-tag" data-category="concepts">OpenAI Whisper</div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-experience fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Simulations & Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2026 - Present</div>
+          <div class="timeline-content">
+            <h3 class="role-title">Technology Analyst Simulation</h3>
+            <h4 class="company-name">Deloitte Australia (Forage)</h4>
+            <ul class="timeline-bullets">
+              <li>Architected a proposal for a business-focused analytics dashboard, solving critical client data visibility issues and improving reporting turnaround.</li>
+              <li>Produced technical documentation and optimized coding solutions for the deployment team, demonstrating proficiency in consulting-style problem-solving.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2026 - Present</div>
+          <div class="timeline-content">
+            <h3 class="role-title">Data Analyst Simulation</h3>
+            <h4 class="company-name">Tata Group (Forage)</h4>
+            <ul class="timeline-bullets">
+              <li>Engineered a predictive modeling framework using Scikit-learn to assess customer delinquency risk, processing 5,000+ transaction records with high accuracy.</li>
+              <li>Conducted Exploratory Data Analysis (EDA) using GenAI tools to validate data quality and visualize key financial risk indicators.</li>
+              <li>Formulated an AI-driven collections strategy integrating ethical AI principles to ensure 100% regulatory compliance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-projects fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Key Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">AI Assistant</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Klaus AI Voice Assistant</h3>
+            <p class="project-text">
+              A multilingual AI voice assistant using OpenAI Whisper for Speech-to-Text and ElevenLabs for Text-to-Speech, orchestrated via LangChain for LLM-powered multi-turn dialogue.
+            </p>
+            <ul class="project-features">
+              <li>Implemented Retrieval-Augmented Generation (RAG) and context-aware memory using LangChain ConversationBufferMemory.</li>
+              <li>Reduced response latency by 40% through optimized streaming request handling and async pipeline architecture.</li>
+              <li>Applied prompt engineering to improve response quality and persona consistency.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>LangChain</span>
+              <span>Whisper</span>
+              <span>ElevenLabs</span>
+              <span>NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Multiplayer Web</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Cherry Game</h3>
+            <p class="project-text">
+              A scalable, full-stack real-time multiplayer web application supporting 100+ concurrent users with RESTful backend services and WebSocket-driven state synchronizations.
+            </p>
+            <ul class="project-features">
+              <li>Built backend services powered by FastAPI with a highly responsive, glassmorphism frontend layout.</li>
+              <li>Implemented WebSocket-based real-time state management for low-latency multiplayer gameplay.</li>
+              <li>Designed modular backend architecture adhering to REST API industry standards.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span>FastAPI</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>WebSockets</span>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-certifications fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Certifications & Credentials</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certifications-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+          </div>
+          <h3>AWS Knowledge: Cloud Essentials</h3>
+          <p>Training Badge verifying cloud architecture foundations.</p>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3>Technology Job Simulation</h3>
+          <p>Deloitte Australia (via Forage)</p>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h3>Software Engineering Simulation</h3>
+          <p>Commonwealth Bank (via Forage)</p>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
+          </div>
+          <h3>Project Manager Simulation</h3>
+          <p>Siemens Mobility (via Forage)</p>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M14.5 9.5l-5 5M9.5 9.5l5 5"></path></svg>
+          </div>
+          <h3>Database and SQL</h3>
+          <p>FreeCodeCamp credential in database architectures.</p>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Threat Landscape 2.0</h3>
+          <p>Fortinet credential in security principles.</p>
+        </div>
+
+        <!-- Cert 7 -->
+        <div class="cert-card full-width-cert">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>EF SET English Certificate</h3>
+          <p>Verified **Proficient C2** level score (Highest professional fluency).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-education fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-card">
+        <div class="education-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+        </div>
+        <div class="education-details">
+          <div class="edu-top">
+            <h3>B.Tech in Artificial Intelligence & Machine Learning</h3>
+            <span class="edu-date">Aug 2022 - Apr 2026</span>
+          </div>
+          <h4>Parul Institute of Engineering and Technology</h4>
+          <p class="edu-loc">Vadodara, Gujarat, India</p>
+          <div class="edu-gpa">
+            <span class="gpa-label">Cumulative GPA:</span>
+            <span class="gpa-val">6.97 / 10</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact fade-in-section">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's start a project together</h3>
+          <p>Whether you're looking to hire an AI/ML Engineer, discuss prompt engineering strategies, or build a scalable FastAPI project, my inbox is always open.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <span>Email me</span>
+                <a href="mailto:kuvvarapukiran45@gmail.com">kuvvarapukiran45@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <span>Call me</span>
+                <a href="tel:+917386472766">+91 73864 72766</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              </div>
+              <div>
+                <span>Location</span>
+                <p>Phirangipuram, Andhra Pradesh, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Message simulation sent successfully!');">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" required placeholder=" ">
+                <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" required placeholder=" ">
+                <label for="email">Your Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" required placeholder=" ">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" required placeholder=" " rows="5"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="declaration">
+        <strong>Declaration:</strong> I hereby declare that the information furnished above is true and correct to the best of my knowledge and belief.
+      </p>
+      <div class="signature">
+        <span class="sig-name">Kuvarapu Kiran</span>
+        <span class="sig-date">July 2026</span>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Kuvarapu Kiran. Built with premium Vanilla CSS.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
